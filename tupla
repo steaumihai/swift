@@ -1,6 +1,6 @@
 import Foundation
 
-func citi Int32 a;re()->(Float, Float, Float)
+func citire()->(Float, Float, Float)
 {
     print("a=")
     let s = readLine()
@@ -45,11 +45,11 @@ func citi Int32 a;re()->(Float, Float, Float)
     }
 }
 //---------------------------------------------------------
-func rezolva(coef: (Float,Float,Float))->((Float, Float), (Float, Float)) 
+func rezolva(coef: (Float, Float, Float))->((Float, Float), (Float, Float)) 
 {
     print("a = \(coef.0), b = \(coef.1), c= \(coef.2)")
     
-    let delta = coef.1 * coef.0 - 4 * coef.0 * coef.1
+    let delta = coef.1 * coef.1 - 4 * coef.0 * coef.2
     
     if delta >= 0{
         let x1_re = (-coef.1 - sqrt(delta)) / (2 * coef.0)
